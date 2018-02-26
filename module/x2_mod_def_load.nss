@@ -101,72 +101,75 @@ void main()
         // SetUserDefinedItemEventPrefix("1_");
 
    }
-object oMod = OBJECT_SELF;
-SetLocalInt(oMod,"lasthour",5);
-//set starting worker amounts
-SetLocalInt(oMod,"1fm",1);
-SetLocalInt(oMod,"1lj",1);
-SetLocalInt(oMod,"1mn",1);
-SetLocalInt(oMod,"1cm",1);
-SetLocalInt(oMod,"1ht",1);
-SetLocalInt(oMod,"1sc",1);
-SetLocalInt(oMod,"2fm",1);
-SetLocalInt(oMod,"2lj",1);
-SetLocalInt(oMod,"2mn",1);
-SetLocalInt(oMod,"2cm",1);
-SetLocalInt(oMod,"2ht",1);
-SetLocalInt(oMod,"2sc",1);
-//set starting infrastructure
-SetLocalInt(oMod,"1fmmax",1);
-SetLocalInt(oMod,"1ljmax",1);
-SetLocalInt(oMod,"1mnmax",1);
-SetLocalInt(oMod,"1cmmax",1);
-SetLocalInt(oMod,"1htmax",1);
-SetLocalInt(oMod,"1scmax",1);
-SetLocalInt(oMod,"2fmmax",1);
-SetLocalInt(oMod,"2ljmax",1);
-SetLocalInt(oMod,"2mnmax",1);
-SetLocalInt(oMod,"2cmmax",1);
-SetLocalInt(oMod,"2htmax",1);
-SetLocalInt(oMod,"2scmax",1);
-//set starting resources
-SetLocalInt(oMod,"1fd",5);
-SetLocalInt(oMod,"1ir",0);
-SetLocalInt(oMod,"1wd",5);
-SetLocalInt(oMod,"1hd",0);
-SetLocalInt(oMod,"1st",0);
-SetLocalInt(oMod,"1mt",0);
-SetLocalInt(oMod,"1ad",0);
-SetLocalInt(oMod,"1cp",5);
-SetLocalInt(oMod,"1eq",5);
-SetLocalInt(oMod,"1iw",0);
-SetLocalInt(oMod,"1sn",5);
-SetLocalInt(oMod,"2fd",5);
-SetLocalInt(oMod,"2ir",0);
-SetLocalInt(oMod,"2wd",5);
-SetLocalInt(oMod,"2hd",0);
-SetLocalInt(oMod,"2st",0);
-SetLocalInt(oMod,"2mt",0);
-SetLocalInt(oMod,"2ad",0);
-SetLocalInt(oMod,"2cp",5);
-SetLocalInt(oMod,"2eq",5);
-SetLocalInt(oMod,"2iw",0);
-SetLocalInt(oMod,"2sn",5);
-//set training level
-SetLocalInt(oMod,"1milmax",1);
-SetLocalInt(oMod,"2milmax",1);
-SetLocalInt(oMod,"turn",1);
-SetLocalInt(oMod,"goodplayers",1);
-SetLocalInt(oMod,"evilplayers",1);
-SetLocalInt(oMod,"maxpop",50);
-SetLocalInt(oMod,"1pop",0);
-SetLocalInt(oMod,"2pop",0);
-SetLocalInt(oMod,"1popmax",5);
-SetLocalInt(oMod,"2popmax",5);
-SetLocalInt(oMod,"1foundry",0);
-SetLocalInt(oMod,"2foundry",0);
-SetLocalInt(oMod,"1mana",0);
-SetLocalInt(oMod,"2mana",0);
-SetLocalInt(oMod,"avglevel",1);
-SetLocalFloat(oMod,"magic",1.5f);
+   if (GetLocalInt(OBJECT_SELF,"inprogress") < 1)
+   {
+        SetLocalInt(OBJECT_SELF,"lasthour",5);
+        //set starting worker amounts
+        SetLocalInt(OBJECT_SELF,"1fm",1);
+        SetLocalInt(OBJECT_SELF,"1lj",1);
+        SetLocalInt(OBJECT_SELF,"1mn",1);
+        SetLocalInt(OBJECT_SELF,"1cm",1);
+        SetLocalInt(OBJECT_SELF,"1ht",1);
+        SetLocalInt(OBJECT_SELF,"1sc",1);
+        SetLocalInt(OBJECT_SELF,"2fm",1);
+        SetLocalInt(OBJECT_SELF,"2lj",1);
+        SetLocalInt(OBJECT_SELF,"2mn",1);
+        SetLocalInt(OBJECT_SELF,"2cm",1);
+        SetLocalInt(OBJECT_SELF,"2ht",1);
+        SetLocalInt(OBJECT_SELF,"2sc",1);
+        //set starting infrastructure
+        SetLocalInt(OBJECT_SELF,"1fmmax",1);
+        SetLocalInt(OBJECT_SELF,"1ljmax",1);
+        SetLocalInt(OBJECT_SELF,"1mnmax",1);
+        SetLocalInt(OBJECT_SELF,"1cmmax",1);
+        SetLocalInt(OBJECT_SELF,"1htmax",1);
+        SetLocalInt(OBJECT_SELF,"1scmax",1);
+        SetLocalInt(OBJECT_SELF,"2fmmax",1);
+        SetLocalInt(OBJECT_SELF,"2ljmax",1);
+        SetLocalInt(OBJECT_SELF,"2mnmax",1);
+        SetLocalInt(OBJECT_SELF,"2cmmax",1);
+        SetLocalInt(OBJECT_SELF,"2htmax",1);
+        SetLocalInt(OBJECT_SELF,"2scmax",1);
+        //set starting resources
+        SetLocalInt(OBJECT_SELF,"1fd",5);
+        SetLocalInt(OBJECT_SELF,"1ir",0);
+        SetLocalInt(OBJECT_SELF,"1wd",5);
+        SetLocalInt(OBJECT_SELF,"1hd",0);
+        SetLocalInt(OBJECT_SELF,"1st",0);
+        SetLocalInt(OBJECT_SELF,"1mt",0);
+        SetLocalInt(OBJECT_SELF,"1ad",0);
+        SetLocalInt(OBJECT_SELF,"1cp",5);
+        SetLocalInt(OBJECT_SELF,"1eq",5);
+        SetLocalInt(OBJECT_SELF,"1iw",0);
+        SetLocalInt(OBJECT_SELF,"1sn",5);
+        SetLocalInt(OBJECT_SELF,"2fd",5);
+        SetLocalInt(OBJECT_SELF,"2ir",0);
+        SetLocalInt(OBJECT_SELF,"2wd",5);
+        SetLocalInt(OBJECT_SELF,"2hd",0);
+        SetLocalInt(OBJECT_SELF,"2st",0);
+        SetLocalInt(OBJECT_SELF,"2mt",0);
+        SetLocalInt(OBJECT_SELF,"2ad",0);
+        SetLocalInt(OBJECT_SELF,"2cp",5);
+        SetLocalInt(OBJECT_SELF,"2eq",5);
+        SetLocalInt(OBJECT_SELF,"2iw",0);
+        SetLocalInt(OBJECT_SELF,"2sn",5);
+        //set training level
+        SetLocalInt(OBJECT_SELF,"1milmax",1);
+        SetLocalInt(OBJECT_SELF,"2milmax",1);
+        SetLocalInt(OBJECT_SELF,"turn",1);
+        SetLocalInt(OBJECT_SELF,"goodplayers",1);
+        SetLocalInt(OBJECT_SELF,"evilplayers",1);
+        SetLocalInt(OBJECT_SELF,"maxpop",50);
+        SetLocalInt(OBJECT_SELF,"1pop",0);
+        SetLocalInt(OBJECT_SELF,"2pop",0);
+        SetLocalInt(OBJECT_SELF,"1popmax",5);
+        SetLocalInt(OBJECT_SELF,"2popmax",5);
+        SetLocalInt(OBJECT_SELF,"1foundry",0);
+        SetLocalInt(OBJECT_SELF,"2foundry",0);
+        SetLocalInt(OBJECT_SELF,"1mana",0);
+        SetLocalInt(OBJECT_SELF,"2mana",0);
+        SetLocalInt(OBJECT_SELF,"avglevel",1);
+        SetLocalFloat(OBJECT_SELF,"magic",1.5f);
+        SetLocalInt(OBJECT_SELF,"inprogress",1);
+   }
 }

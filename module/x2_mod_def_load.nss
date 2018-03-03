@@ -105,18 +105,18 @@ void main()
    {
         SetLocalInt(OBJECT_SELF,"lasthour",5);
         //set starting worker amounts
-        SetLocalInt(OBJECT_SELF,"1fm",1);
-        SetLocalInt(OBJECT_SELF,"1lj",1);
-        SetLocalInt(OBJECT_SELF,"1mn",1);
-        SetLocalInt(OBJECT_SELF,"1cm",1);
-        SetLocalInt(OBJECT_SELF,"1ht",1);
-        SetLocalInt(OBJECT_SELF,"1sc",1);
-        SetLocalInt(OBJECT_SELF,"2fm",1);
-        SetLocalInt(OBJECT_SELF,"2lj",1);
-        SetLocalInt(OBJECT_SELF,"2mn",1);
-        SetLocalInt(OBJECT_SELF,"2cm",1);
-        SetLocalInt(OBJECT_SELF,"2ht",1);
-        SetLocalInt(OBJECT_SELF,"2sc",1);
+        SetLocalInt(OBJECT_SELF,"1fm",0);
+        SetLocalInt(OBJECT_SELF,"1lj",0);
+        SetLocalInt(OBJECT_SELF,"1mn",0);
+        SetLocalInt(OBJECT_SELF,"1cm",0);
+        SetLocalInt(OBJECT_SELF,"1ht",0);
+        SetLocalInt(OBJECT_SELF,"1sc",0);
+        SetLocalInt(OBJECT_SELF,"2fm",0);
+        SetLocalInt(OBJECT_SELF,"2lj",0);
+        SetLocalInt(OBJECT_SELF,"2mn",0);
+        SetLocalInt(OBJECT_SELF,"2cm",0);
+        SetLocalInt(OBJECT_SELF,"2ht",0);
+        SetLocalInt(OBJECT_SELF,"2sc",0);
         //set starting infrastructure
         SetLocalInt(OBJECT_SELF,"1fmmax",1);
         SetLocalInt(OBJECT_SELF,"1ljmax",1);

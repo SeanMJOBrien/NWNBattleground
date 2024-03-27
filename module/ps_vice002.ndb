@@ -1,0 +1,194 @@
+NDB V1.0
+0000004 0000001 0000044 0000012 0000030
+n00 x0_i0_campaign
+n01 ps_questitems
+n02 X0_I0_PARTYWIDE
+N03 ps_vice002
+s 03 vector
+sf f x
+sf f y
+sf f z
+f ffffffff ffffffff 001 v DetermineQuestsItems
+fp i
+f ffffffff ffffffff 000 s GetCampaignDBName
+f ffffffff ffffffff 003 v SetCampaignDBString
+fp o
+fp s
+fp s
+f ffffffff ffffffff 002 s GetCampaignDBString
+fp o
+fp s
+f ffffffff ffffffff 003 v SetCampaignDBInt
+fp o
+fp s
+fp i
+f ffffffff ffffffff 002 i GetCampaignDBInt
+fp o
+fp s
+f ffffffff ffffffff 003 v SetCampaignDBFloat
+fp o
+fp s
+fp f
+f ffffffff ffffffff 002 f GetCampaignDBFloat
+fp o
+fp s
+f ffffffff ffffffff 003 v SetCampaignDBVector
+fp o
+fp s
+fp t0000
+f ffffffff ffffffff 002 t0000 GetCampaignDBVector
+fp o
+fp s
+f ffffffff ffffffff 003 v SetCampaignDBLocation
+fp o
+fp s
+fp e2
+f ffffffff ffffffff 002 e2 GetCampaignDBLocation
+fp o
+fp s
+f ffffffff ffffffff 003 i StoreCampaignDBObject
+fp o
+fp s
+fp o
+f ffffffff ffffffff 004 o RetrieveCampaignDBObject
+fp o
+fp s
+fp e2
+fp o
+f ffffffff ffffffff 002 v DeleteCampaignDBVariable
+fp o
+fp s
+f ffffffff ffffffff 001 i GetNumberPartyMembers
+fp o
+f ffffffff ffffffff 003 v SetLocalStringOnAll
+fp o
+fp s
+fp s
+f ffffffff ffffffff 003 v SetLocalIntOnAll
+fp o
+fp s
+fp i
+f ffffffff ffffffff 003 v SetLocalFloatOnAll
+fp o
+fp s
+fp f
+f ffffffff ffffffff 003 v SetLocalLocationOnAll
+fp o
+fp s
+fp e2
+f ffffffff ffffffff 003 v SetLocalObjectOnAll
+fp o
+fp s
+fp o
+f ffffffff ffffffff 003 v SetCampaignDBStringOnAll
+fp o
+fp s
+fp s
+f ffffffff ffffffff 003 v SetCampaignDBIntOnAll
+fp o
+fp s
+fp i
+f ffffffff ffffffff 003 v SetCampaignDBFloatOnAll
+fp o
+fp s
+fp f
+f ffffffff ffffffff 003 v SetCampaignDBVectorOnAll
+fp o
+fp s
+fp t0000
+f ffffffff ffffffff 003 v SetCampaignDBLocationOnAll
+fp o
+fp s
+fp e2
+f ffffffff ffffffff 003 v StoreCampaignDBObjectOnAll
+fp o
+fp s
+fp o
+f ffffffff ffffffff 002 v DeleteCampaignDBVariableOnAll
+fp o
+fp s
+f ffffffff ffffffff 002 v GiveGoldToAllEqually
+fp o
+fp i
+f ffffffff ffffffff 002 v GiveGoldToAll
+fp o
+fp i
+f ffffffff ffffffff 002 v GiveXPToAllEqually
+fp o
+fp i
+f ffffffff ffffffff 002 v GiveXPToAll
+fp o
+fp i
+f ffffffff ffffffff 003 v AdjustReputationWithFaction
+fp o
+fp o
+fp i
+f ffffffff ffffffff 002 v ClearPersonalReputationWithFaction
+fp o
+fp o
+f ffffffff ffffffff 002 v ClearAssociateActions
+fp o
+fp i
+f ffffffff ffffffff 002 v ClearNearbyFriendActions
+fp o
+fp i
+f ffffffff ffffffff 001 v SurrenderAllToEnemies
+fp o
+f ffffffff ffffffff 002 i GetIsItemPossessedByParty
+fp o
+fp s
+f ffffffff ffffffff 002 o GetItemPossessedByParty
+fp o
+fp s
+f ffffffff ffffffff 002 v RemoveItemFromParty
+fp o
+fp s
+f ffffffff ffffffff 003 v AdjustAlignmentOnAll
+fp o
+fp i
+fp i
+f 00000089 00000428 000 i StartingConditional
+f 0000000d 00000017 000 i #loader
+f 00000017 00000089 000 v #globals
+v 0000000f ffffffff 00000000 i #retval
+v 00000019 ffffffff 00000000 s X0_DATABASE_DEFAULT
+v 00000043 ffffffff 00000004 s X0_DATABASE_XP1
+v 00000089 00000426 00000000 i #retval
+v 0000008b 00000420 00000004 o oQuestChest
+v 000000b5 00000420 00000008 o oPC
+v 000000ca 00000420 0000000c o oItemScan
+v 000000e7 00000420 00000010 s sSay
+v 000000e9 00000420 00000014 i nGPReward
+v 000000eb 00000420 00000018 i nXPReward
+v 000000ed 00000420 0000001c s sQuestList
+v 000001a7 000003c9 00000020 i #switcheval
+l00 0000051 00000017 00000041
+l00 0000053 00000041 00000067
+l03 0000006 00000089 000000b3
+l03 0000007 000000b3 000000c8
+l03 0000008 000000c8 000000e5
+l03 0000009 000000e5 000000e7
+l03 0000010 000000e7 000000e9
+l03 0000011 000000e9 000000eb
+l03 0000012 000000eb 00000113
+l03 0000013 00000113 0000013a
+l03 0000015 00000140 00000162
+l03 0000016 00000162 00000182
+l03 0000019 00000188 00000196
+l03 0000021 0000019c 00000205
+l03 0000023 00000205 00000205
+l03 0000024 00000205 00000262
+l03 0000025 00000262 00000268
+l03 0000026 00000268 00000268
+l03 0000027 00000268 000002e4
+l03 0000028 000002e4 000002ea
+l03 0000029 000002ea 000002ea
+l03 0000030 000002ea 00000332
+l03 0000031 00000332 00000338
+l03 0000032 00000338 00000338
+l03 0000033 00000338 000003c3
+l03 0000034 000003c3 000003c9
+l03 0000037 000003d5 000003d7
+l03 0000038 000003ed 00000400
+l03 0000039 00000400 00000420
+l03 0000040 00000426 00000428

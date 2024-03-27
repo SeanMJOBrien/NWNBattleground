@@ -1,0 +1,197 @@
+NDB V1.0
+0000003 0000001 0000085 0000013 0000041
+n00 ps_timestamp
+n01 x2_inc_switches
+N02 ps_wimgame_os2
+s 03 vector
+sf f x
+sf f y
+sf f z
+f ffffffff ffffffff 000 i EVENT_USER_DEFINED_PRESPAWN
+f ffffffff ffffffff 000 i EVENT_USER_DEFINED_POSTSPAWN
+f ffffffff ffffffff 002 v TimeStamp
+fp o
+fp i
+f 0000023d 000006cc 006 v AdvanceTimeStamp
+fp o
+fp i
+fp i
+fp i
+fp i
+fp i
+f ffffffff ffffffff 002 i GetIsLaterThan
+fp o
+fp i
+f ffffffff ffffffff 002 v DeleteTimeStamp
+fp o
+fp i
+f ffffffff ffffffff 002 i GetHoursTill
+fp o
+fp i
+f ffffffff ffffffff 000 s SayGreyhawkDateTime
+f ffffffff ffffffff 001 s SayHours
+fp i
+f ffffffff ffffffff 001 v AdvanceTimeInHours
+fp i
+f ffffffff ffffffff 002 s SayTimestamp
+fp o
+fp i
+f ffffffff ffffffff 000 s SayLogTime
+f ffffffff ffffffff 000 s MODULE_SWITCH_ENABLE_UMD_SCROLLS
+f ffffffff ffffffff 000 s MODULE_SWITCH_DISABLE_ITEM_CREATION_FEATS
+f ffffffff ffffffff 000 s MODULE_SWITCH_AOE_HURT_NEUTRAL_NPCS
+f ffffffff ffffffff 000 s MODULE_SWITCH_ENABLE_CRAFT_WAND_50_CHARGES
+f ffffffff ffffffff 000 s MODULE_SWITCH_EPIC_SPELLS_HURT_CASTER
+f ffffffff ffffffff 000 s MODULE_SWITCH_SPELL_CORERULES_DMASTERTOUCH
+f ffffffff ffffffff 000 s MODULE_SWITCH_RESTRICT_USE_POISON_TO_FEAT
+f ffffffff ffffffff 000 s MODULE_SWITCH_ENABLE_MULTI_HENCH_AOE_DAMAGE
+f ffffffff ffffffff 000 s MODULE_SWITCH_ENABLE_NPC_AOE_HURT_ALLIES
+f ffffffff ffffffff 000 s MODULE_SWITCH_ENABLE_BEBILITH_RUIN_ARMOR
+f ffffffff ffffffff 000 s MODULE_SWITCH_ENABLE_INVISIBLE_GLYPH_OF_WARDING
+f ffffffff ffffffff 000 s MODULE_SWITCH_ENABLE_CROSSAREA_WALKWAYPOINTS
+f ffffffff ffffffff 000 s MODULE_SWITCH_DISABLE_SECRET_DOOR_FLASH
+f ffffffff ffffffff 000 s MODULE_SWITCH_ENABLE_TAGBASED_SCRIPTS
+f ffffffff ffffffff 000 s MODULE_SWITCH_USE_XP2_RESTSYSTEM
+f ffffffff ffffffff 000 s MODULE_SWITCH_DISABLE_AI_DISPEL_AOE
+f ffffffff ffffffff 000 s MODULE_SWITCH_NO_RANDOM_MONSTER_LOOT
+f ffffffff ffffffff 000 s MODULE_VAR_OVERRIDE_SPELLSCRIPT
+f ffffffff ffffffff 000 s MODULE_VAR_TAGBASED_SCRIPT_PREFIX
+f ffffffff ffffffff 000 s MODULE_VAR_WANDERING_MONSTER_2DA
+f ffffffff ffffffff 000 s MODULE_VAR_AI_NO_DISPEL_AOE_CHANCE
+f ffffffff ffffffff 000 s MODULE_VAR_AI_STOP_EXPERTISE_ABUSE
+f ffffffff ffffffff 000 s CREATURE_VAR_CUSTOM_AISCRIPT
+f ffffffff ffffffff 000 s CREATURE_VAR_RANDOMIZE_NAME
+f ffffffff ffffffff 000 s CREATURE_VAR_RANDOMIZE_SPELLUSE
+f ffffffff ffffffff 000 s CREATURE_VAR_USE_SPAWN_STEALTH
+f ffffffff ffffffff 000 s CREATURE_VAR_USE_SPAWN_SEARCH
+f ffffffff ffffffff 000 s CREATURE_VAR_USE_SPAWN_AMBIENT
+f ffffffff ffffffff 000 s CREATURE_VAR_USE_SPAWN_AMBIENT_IMMOBILE
+f ffffffff ffffffff 000 s CREATURE_VAR_IMMUNE_TO_DISPEL
+f ffffffff ffffffff 000 s CREATURE_VAR_IS_INCORPOREAL
+f ffffffff ffffffff 000 s CREATURE_VAR_NUMBER_OF_ATTACKS
+f ffffffff ffffffff 000 s CREATURE_AI_MODIFIED_MAGIC_RATE
+f ffffffff ffffffff 000 s CREATURE_AI_MODIFIED_OFFENSE_RATE
+f ffffffff ffffffff 000 s CREATURE_AI_MODIFIED_COMPASSION_RATE
+f ffffffff ffffffff 000 s CREATURE_VAR_PALE_MASTER_SPECIAL_ITEM
+f ffffffff ffffffff 000 i X2_ITEM_EVENT_ACTIVATE
+f ffffffff ffffffff 000 i X2_ITEM_EVENT_EQUIP
+f ffffffff ffffffff 000 i X2_ITEM_EVENT_UNEQUIP
+f ffffffff ffffffff 000 i X2_ITEM_EVENT_ONHITCAST
+f ffffffff ffffffff 000 i X2_ITEM_EVENT_ACQUIRE
+f ffffffff ffffffff 000 i X2_ITEM_EVENT_UNACQUIRE
+f ffffffff ffffffff 000 i X2_ITEM_EVENT_SPELLCAST_AT
+f ffffffff ffffffff 000 i X2_EXECUTE_SCRIPT_CONTINUE
+f ffffffff ffffffff 000 i X2_EXECUTE_SCRIPT_END
+f ffffffff ffffffff 001 v SetUserDefinedItemEventNumber
+fp i
+f ffffffff ffffffff 000 i GetUserDefinedItemEventNumber
+f ffffffff ffffffff 002 v SetModuleSwitch
+fp s
+fp i
+f ffffffff ffffffff 001 i GetModuleSwitchValue
+fp s
+f ffffffff ffffffff 000 s DOOR_FLAG_RESIST_KNOCK
+f ffffffff ffffffff 003 v SetDoorFlag
+fp o
+fp s
+fp i
+f ffffffff ffffffff 002 i GetDoorFlag
+fp o
+fp s
+f ffffffff ffffffff 000 s WAYPOINT_VAR_FORCE_SETFACING
+f ffffffff ffffffff 000 s ITEM_FLAG_NO_CRAFT_MODIFICATION
+f ffffffff ffffffff 003 v SetItemFlag
+fp o
+fp s
+fp i
+f ffffffff ffffffff 002 i GetItemFlag
+fp o
+fp s
+f ffffffff ffffffff 002 i ExecuteScriptAndReturnInt
+fp s
+fp o
+f ffffffff ffffffff 001 v SetExecutedScriptReturnValue
+fp i
+f ffffffff ffffffff 001 v SetUserDefinedItemEventPrefix
+fp s
+f ffffffff ffffffff 001 v SetModuleOverrideSpellscript
+fp s
+f ffffffff ffffffff 003 v SetCreatureFlag
+fp o
+fp s
+fp i
+f ffffffff ffffffff 002 i GetCreatureFlag
+fp o
+fp s
+f ffffffff ffffffff 002 v SetCreatureOverrideAIScript
+fp o
+fp s
+f ffffffff ffffffff 001 v SetCreatureOverrideAIScriptFinished
+fp o
+f ffffffff ffffffff 001 v ClearCreatureOverrideAIScriptTarget
+fp o
+f ffffffff ffffffff 001 o GetCreatureOverrideAIScriptTarget
+fp o
+f ffffffff ffffffff 001 v SetWanderingMonster2DAFile
+fp s
+f ffffffff ffffffff 000 s GetModuleOverrideSpellscript
+f ffffffff ffffffff 000 v SetModuleOverrideSpellScriptFinished
+f ffffffff ffffffff 000 i GetModuleOverrideSpellScriptFinished
+f ffffffff ffffffff 001 s GetUserDefinedItemEventScriptName
+fp o
+f 00000015 0000023d 000 v main
+f 0000000d 00000015 000 v #loader
+v 00000017 00000235 00000000 o oScan
+v 000000ba 00000235 00000004 i nSpecEvent
+v 00000156 00000235 00000008 i nNumber
+v 0000023d 000006c4 00000000 i nSlot
+v 0000023d 000006c4 00000004 i nAddHour
+v 0000023d 000006c4 00000008 i nAddDay
+v 0000023d 000006c4 0000000c i nAddMonth
+v 0000023d 000006c4 00000010 i nAddYear
+v 0000023d 000006c4 00000014 o oTarget
+v 00000368 000006b8 00000018 i nHourBuffer
+v 000003ac 000006b8 0000001c i nDayBuffer
+v 000003ef 000006b8 00000020 i nMonthBuffer
+v 00000434 000006b8 00000024 i nYearBuffer
+l02 0000033 00000015 00000030
+l02 0000034 00000030 00000046
+l02 0000036 00000046 00000061
+l02 0000037 00000099 000000b2
+l02 0000040 000000b8 000000f4
+l02 0000043 000000f4 00000132
+l02 0000045 00000138 0000014e
+l02 0000050 00000154 00000189
+l02 0000051 00000189 00000199
+l02 0000053 0000019f 000001b2
+l02 0000057 000001b8 000001d5
+l02 0000061 000001d5 00000213
+l02 0000063 00000219 0000022f
+l02 0000065 0000023b 0000023d
+l00 0000034 0000023d 0000028b
+l00 0000036 00000291 000002c0
+l00 0000037 000002c0 000002ee
+l00 0000038 000002ee 0000031e
+l00 0000039 0000031e 0000034d
+l00 0000041 00000353 00000360
+l00 0000043 00000366 000003aa
+l00 0000044 000003aa 000003ed
+l00 0000045 000003ed 00000432
+l00 0000046 00000432 00000476
+l00 0000047 00000476 00000486
+l00 0000049 0000048c 000004b4
+l00 0000050 000004b4 000004ca
+l00 0000052 000004ca 000004e8
+l00 0000055 000004f4 00000504
+l00 0000057 0000050a 00000532
+l00 0000058 00000532 00000548
+l00 0000060 00000548 00000566
+l00 0000063 00000572 00000582
+l00 0000065 00000588 000005b0
+l00 0000066 000005b0 000005c6
+l00 0000068 000005c6 000005e4
+l00 0000071 000005f0 00000622
+l00 0000072 00000622 00000653
+l00 0000073 00000653 00000686
+l00 0000074 00000686 000006b8
+l00 0000076 000006c4 000006cc

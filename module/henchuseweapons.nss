@@ -1,0 +1,11 @@
+int StartingConditional()
+{
+    return GetHasFeat(FEAT_WEAPON_PROFICIENCY_EXOTIC) ||
+        GetHasFeat(FEAT_WEAPON_PROFICIENCY_SIMPLE) ||
+        GetHasFeat(FEAT_WEAPON_PROFICIENCY_MARTIAL) ||
+        GetHasFeat(FEAT_WEAPON_PROFICIENCY_DRUID) ||
+        GetHasFeat(FEAT_WEAPON_PROFICIENCY_MONK) ||
+        GetHasFeat(FEAT_WEAPON_PROFICIENCY_ROGUE) ||
+        GetHasFeat(FEAT_WEAPON_PROFICIENCY_WIZARD) ||
+        GetHasFeat(FEAT_WEAPON_PROFICIENCY_ELF);
+}

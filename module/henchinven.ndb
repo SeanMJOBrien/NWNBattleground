@@ -1,0 +1,44 @@
+NDB V1.0
+0000002 0000001 0000024 0000004 0000004
+n00 hench_i0_options
+N01 henchinven
+s 03 vector
+sf f x
+sf f y
+sf f z
+f ffffffff ffffffff 000 i HENCH_MONSTER_SHOUT_FREQUENCY
+f ffffffff ffffffff 000 i HENCH_MONSTER_DONT_CHECK_HEARD_MONSTER
+f ffffffff ffffffff 000 i HENCH_GENAI_SOUINSTALLED
+f ffffffff ffffffff 000 i HENCH_GENAI_ENABLEHEARING
+f ffffffff ffffffff 000 i HENCH_GENAI_ENABLERAISE
+f ffffffff ffffffff 001 i GetGeneralOptions
+fp i
+f ffffffff ffffffff 000 i HENCH_MONAI_STEALTH
+f ffffffff ffffffff 000 i HENCH_MONAI_WANDER
+f ffffffff ffffffff 000 i HENCH_MONAI_UNLOCK
+f ffffffff ffffffff 000 i HENCH_MONAI_OPEN
+f ffffffff ffffffff 000 i HENCH_MONAI_DISTRIB
+f ffffffff ffffffff 000 i HENCH_MONAI_HASTE
+f ffffffff ffffffff 000 i HENCH_MONAI_HEALPT
+f ffffffff ffffffff 000 i HENCH_MONAI_COMP
+f ffffffff ffffffff 001 i GetMonsterOptions
+fp i
+f ffffffff ffffffff 000 i HENCH_HENAI_NOATTACK
+f ffffffff ffffffff 000 i HENCH_HENAI_INVENTORY
+f ffffffff ffffffff 000 f fHenchHearingDistance
+f ffffffff ffffffff 000 f fHenchMasterHearingDistance
+f 00000049 00000079 001 i GetHenchmanOptions
+fp i
+f ffffffff ffffffff 001 i GetCreatureUseItemsOverride
+fp o
+f ffffffff ffffffff 000 i GetUseHeartbeatDetect
+f 00000017 00000049 000 i StartingConditional
+f 0000000d 00000017 000 i #loader
+v 0000000f ffffffff 00000000 i #retval
+v 00000017 00000047 00000000 i #retval
+v 00000049 00000077 00000000 i #retval
+v 00000049 00000071 00000004 i nSel
+l01 0000005 00000017 00000047
+l01 0000006 00000047 00000049
+l00 0000107 00000049 00000071
+l00 0000108 00000071 00000079

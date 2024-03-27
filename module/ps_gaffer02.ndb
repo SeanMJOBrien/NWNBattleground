@@ -1,0 +1,75 @@
+NDB V1.0
+0000003 0000001 0000018 0000006 0000019
+n00 ps_timestamp
+n01 ps_mod_data
+N02 ps_gaffer02
+s 03 vector
+sf f x
+sf f y
+sf f z
+f ffffffff ffffffff 002 v TimeStamp
+fp o
+fp i
+f ffffffff ffffffff 006 v AdvanceTimeStamp
+fp o
+fp i
+fp i
+fp i
+fp i
+fp i
+f ffffffff ffffffff 002 i GetIsLaterThan
+fp o
+fp i
+f ffffffff ffffffff 002 v DeleteTimeStamp
+fp o
+fp i
+f ffffffff ffffffff 002 i GetHoursTill
+fp o
+fp i
+f ffffffff ffffffff 000 s SayGreyhawkDateTime
+f ffffffff ffffffff 001 s SayHours
+fp i
+f ffffffff ffffffff 001 v AdvanceTimeInHours
+fp i
+f ffffffff ffffffff 002 s SayTimestamp
+fp o
+fp i
+f ffffffff ffffffff 000 s SayLogTime
+f 00000040 00000305 001 v SaveStores
+fp o
+f ffffffff ffffffff 002 v LoadStores
+fp o
+fp o
+f ffffffff ffffffff 001 v SaveTime
+fp o
+f ffffffff ffffffff 001 v LoadTime
+fp o
+f ffffffff ffffffff 000 v SaveTreasure
+f ffffffff ffffffff 000 v LoadTreasure
+f 00000015 00000040 000 v main
+f 0000000d 00000015 000 v #loader
+v 00000017 00000038 00000000 o oPC
+v 00000040 000002fd 00000000 o oPC
+v 00000042 000002f7 00000004 o oStores
+v 00000070 000002f7 00000008 i nCount
+v 00000086 000002f7 0000000c o oBuffer
+v 0000022a 000002f7 00000010 o oScan
+l02 0000005 00000015 0000002a
+l02 0000006 0000002a 00000038
+l02 0000007 0000003e 00000040
+l01 0000006 00000040 0000006e
+l01 0000008 0000006e 00000084
+l01 0000009 00000084 000000ef
+l01 0000010 000000ef 00000135
+l01 0000011 00000135 0000014b
+l01 0000013 0000014b 0000015f
+l01 0000014 0000015f 000001c8
+l01 0000015 000001c8 0000020e
+l01 0000018 00000214 00000228
+l01 0000019 00000228 00000245
+l01 0000020 00000245 0000025b
+l01 0000022 0000025b 000002af
+l01 0000023 000002af 000002c3
+l01 0000024 000002c3 000002d6
+l01 0000025 000002d6 000002f1
+l01 0000027 000002fd 00000305

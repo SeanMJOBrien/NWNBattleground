@@ -33,11 +33,28 @@
 //:: Created By: Georg Zoeller
 //:: Created On: 2003-07-16
 //:://////////////////////////////////////////////
-
+#include "ps_mod_data"
+#include "ps_questitems"
 #include "x2_inc_switches"
 #include "x2_inc_restsys"
+#include "ps_merchchange"
 void main()
 {
+    SetMaxHenchmen(6);
+    object oMod = GetModule();
+
+    /* doa_lootnotify - cache icon dimension for baseitems */
+    int row,size;
+    for (row=0; row<113; row++)
+        {
+        size = StringToInt(Get2DAString("baseitems","InvSlotWidth",row));
+        if (size)
+            {
+            size *= StringToInt(Get2DAString("baseitems","InvSlotHeight",row));
+            if (size > 1) SetLocalInt(oMod, "baseitem_size_" + IntToString(row), size);
+            }
+        }
+
    if (GetGameDifficulty() ==  GAME_DIFFICULTY_CORE_RULES || GetGameDifficulty() ==  GAME_DIFFICULTY_DIFFICULT)
    {
         // * Setting the switch below will enable a seperate Use Magic Device Skillcheck for
@@ -47,7 +64,7 @@ void main()
        // * Activating the switch below will make AOE spells hurt neutral NPCS by default
        // SetModuleSwitch (MODULE_SWITCH_AOE_HURT_NEUTRAL_NPCS, TRUE);
    }
-
+  SetLocalInt(GetModule(), "X2_L_NOTREASURE",TRUE);
    // * AI: Activating the switch below will make the creaures using the WalkWaypoint function
    // * able to walk across areas
    // SetModuleSwitch (MODULE_SWITCH_ENABLE_CROSSAREA_WALKWAYPOINTS, TRUE);
@@ -58,7 +75,7 @@ void main()
 
    // * Craft Feats: Want 50 charges on a newly created wand? We found this unbalancing,
    // * but since it is described this way in the book, here is the switch to get it back...
-    SetModuleSwitch (MODULE_SWITCH_ENABLE_CRAFT_WAND_50_CHARGES, TRUE);
+   // SetModuleSwitch (MODULE_SWITCH_ENABLE_CRAFT_WAND_50_CHARGES, TRUE);
 
    // * Craft Feats: Use this to disable Item Creation Feats if you do not want
    // * them in your module
@@ -78,7 +95,7 @@ void main()
 
     // * Spellcasting: Some people don't like caster's abusing expertise to raise their AC
     // * Uncommenting this line will drop expertise mode whenever a spell is cast by a player
-    SetModuleSwitch (MODULE_VAR_AI_STOP_EXPERTISE_ABUSE, TRUE);
+    // SetModuleSwitch (MODULE_VAR_AI_STOP_EXPERTISE_ABUSE, TRUE);
 
 
     // * Item Event Scripts: The game's default event scripts allow routing of all item related events
@@ -101,75 +118,30 @@ void main()
         // SetUserDefinedItemEventPrefix("1_");
 
    }
-   if (GetLocalInt(OBJECT_SELF,"inprogress") < 1)
+
+   // * This initializes Bioware's wandering monster system as used in Hordes of the Underdark
+   // * You can deactivate it, making your module load faster if you do not use it.
+   // * If you want to use it, make sure you set "x2_mod_def_rest" as your module's OnRest Script
+   // SetModuleSwitch (MODULE_SWITCH_USE_XP2_RESTSYSTEM, TRUE);
+
+   if (GetModuleSwitchValue(MODULE_SWITCH_USE_XP2_RESTSYSTEM) == TRUE)
    {
-        SetLocalInt(OBJECT_SELF,"lasthour",5);
-        //set starting worker amounts
-        SetLocalInt(OBJECT_SELF,"1fm",0);
-        SetLocalInt(OBJECT_SELF,"1lj",0);
-        SetLocalInt(OBJECT_SELF,"1mn",0);
-        SetLocalInt(OBJECT_SELF,"1cm",0);
-        SetLocalInt(OBJECT_SELF,"1ht",0);
-        SetLocalInt(OBJECT_SELF,"1sc",0);
-        SetLocalInt(OBJECT_SELF,"2fm",0);
-        SetLocalInt(OBJECT_SELF,"2lj",0);
-        SetLocalInt(OBJECT_SELF,"2mn",0);
-        SetLocalInt(OBJECT_SELF,"2cm",0);
-        SetLocalInt(OBJECT_SELF,"2ht",0);
-        SetLocalInt(OBJECT_SELF,"2sc",0);
-        //set starting infrastructure
-        SetLocalInt(OBJECT_SELF,"1fmmax",1);
-        SetLocalInt(OBJECT_SELF,"1ljmax",1);
-        SetLocalInt(OBJECT_SELF,"1mnmax",1);
-        SetLocalInt(OBJECT_SELF,"1cmmax",1);
-        SetLocalInt(OBJECT_SELF,"1htmax",1);
-        SetLocalInt(OBJECT_SELF,"1scmax",1);
-        SetLocalInt(OBJECT_SELF,"2fmmax",1);
-        SetLocalInt(OBJECT_SELF,"2ljmax",1);
-        SetLocalInt(OBJECT_SELF,"2mnmax",1);
-        SetLocalInt(OBJECT_SELF,"2cmmax",1);
-        SetLocalInt(OBJECT_SELF,"2htmax",1);
-        SetLocalInt(OBJECT_SELF,"2scmax",1);
-        //set starting resources
-        SetLocalInt(OBJECT_SELF,"1fd",5);
-        SetLocalInt(OBJECT_SELF,"1ir",0);
-        SetLocalInt(OBJECT_SELF,"1wd",5);
-        SetLocalInt(OBJECT_SELF,"1hd",0);
-        SetLocalInt(OBJECT_SELF,"1st",0);
-        SetLocalInt(OBJECT_SELF,"1mt",0);
-        SetLocalInt(OBJECT_SELF,"1ad",0);
-        SetLocalInt(OBJECT_SELF,"1cp",5);
-        SetLocalInt(OBJECT_SELF,"1eq",5);
-        SetLocalInt(OBJECT_SELF,"1iw",0);
-        SetLocalInt(OBJECT_SELF,"1sn",5);
-        SetLocalInt(OBJECT_SELF,"2fd",5);
-        SetLocalInt(OBJECT_SELF,"2ir",0);
-        SetLocalInt(OBJECT_SELF,"2wd",5);
-        SetLocalInt(OBJECT_SELF,"2hd",0);
-        SetLocalInt(OBJECT_SELF,"2st",0);
-        SetLocalInt(OBJECT_SELF,"2mt",0);
-        SetLocalInt(OBJECT_SELF,"2ad",0);
-        SetLocalInt(OBJECT_SELF,"2cp",5);
-        SetLocalInt(OBJECT_SELF,"2eq",5);
-        SetLocalInt(OBJECT_SELF,"2iw",0);
-        SetLocalInt(OBJECT_SELF,"2sn",5);
-        //set training level
-        SetLocalInt(OBJECT_SELF,"1milmax",1);
-        SetLocalInt(OBJECT_SELF,"2milmax",1);
-        SetLocalInt(OBJECT_SELF,"turn",1);
-        SetLocalInt(OBJECT_SELF,"goodplayers",1);
-        SetLocalInt(OBJECT_SELF,"evilplayers",1);
-        SetLocalInt(OBJECT_SELF,"maxpop",50);
-        SetLocalInt(OBJECT_SELF,"1pop",0);
-        SetLocalInt(OBJECT_SELF,"2pop",0);
-        SetLocalInt(OBJECT_SELF,"1popmax",5);
-        SetLocalInt(OBJECT_SELF,"2popmax",5);
-        SetLocalInt(OBJECT_SELF,"1foundry",0);
-        SetLocalInt(OBJECT_SELF,"2foundry",0);
-        SetLocalInt(OBJECT_SELF,"1mana",0);
-        SetLocalInt(OBJECT_SELF,"2mana",0);
-        SetLocalInt(OBJECT_SELF,"avglevel",1);
-        SetLocalFloat(OBJECT_SELF,"magic",1.5f);
-        SetLocalInt(OBJECT_SELF,"inprogress",1);
+
+       // * This allows you to specify a different 2da for the wandering monster system.
+       // SetWanderingMonster2DAFile("des_restsystem");
+
+       //* Do not change this line.
+       WMBuild2DACache();
    }
+//DelayCommand(10.0,LoadTreasure());
+//DelayCommand(10.0,DetermineQuestsItems(TRUE));
+//DelayCommand(10.0,MerchantDaychange(GetObjectByTag("STORE_MERCH1")));
+//DelayCommand(10.0,MerchantDaychange(GetObjectByTag("STORE_MERCH2")));
+//DelayCommand(10.0,ExecuteScript("ps_mpop_farm",GetModule()));
+DetermineQuestsItems(TRUE);
+MerchantDaychange(GetObjectByTag("STORE_MERCH1"));
+MerchantDaychange(GetObjectByTag("STORE_MERCH2"));
+ExecuteScript("ps_mpop_farm2",GetModule());
+
+
 }

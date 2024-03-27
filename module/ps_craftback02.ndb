@@ -1,0 +1,80 @@
+NDB V1.0
+0000003 0000001 0000017 0000008 0000021
+n00 ps_timestamp
+n01 ps_craftsman
+N02 ps_craftback02
+s 03 vector
+sf f x
+sf f y
+sf f z
+f ffffffff ffffffff 002 v TimeStamp
+fp o
+fp i
+f ffffffff ffffffff 006 v AdvanceTimeStamp
+fp o
+fp i
+fp i
+fp i
+fp i
+fp i
+f ffffffff ffffffff 002 i GetIsLaterThan
+fp o
+fp i
+f ffffffff ffffffff 002 v DeleteTimeStamp
+fp o
+fp i
+f ffffffff ffffffff 002 i GetHoursTill
+fp o
+fp i
+f ffffffff ffffffff 000 s SayGreyhawkDateTime
+f ffffffff ffffffff 001 s SayHours
+fp i
+f ffffffff ffffffff 001 v AdvanceTimeInHours
+fp i
+f ffffffff ffffffff 002 s SayTimestamp
+fp o
+fp i
+f ffffffff ffffffff 000 s SayLogTime
+f ffffffff ffffffff 002 v CreateVoucherOn
+fp o
+fp o
+f ffffffff ffffffff 001 v HonorVoucher
+fp o
+f 000000a7 000002f0 002 v GenerateStoreList
+fp s
+fp i
+f ffffffff ffffffff 001 v WipeStoreList
+fp s
+f ffffffff ffffffff 001 i CountStore
+fp s
+f 00000015 000000a7 000 v main
+f 0000000d 00000015 000 v #loader
+v 00000017 0000009f 00000000 s sTag
+v 00000043 0000009f 00000004 i nPlace
+v 000000a7 000002e8 00000000 i nListPlace
+v 000000a7 000002e8 00000004 s sContainerTag
+v 000000a9 000002e2 00000008 o oContainer
+v 000000f4 000002e2 0000000c i nCount
+v 0000010a 000002e2 00000010 i nValue
+v 0000010c 000002e2 00000014 o oScan
+l02 0000004 00000015 00000041
+l02 0000005 00000041 0000006d
+l02 0000006 0000006d 00000083
+l02 0000007 00000083 0000009f
+l02 0000008 000000a5 000000a7
+l01 0000057 000000a7 000000ca
+l01 0000058 000000ca 000000da
+l01 0000059 000000f2 00000108
+l01 0000060 00000108 0000010a
+l01 0000061 0000010a 00000127
+l01 0000062 00000127 0000013d
+l01 0000064 0000013d 00000151
+l01 0000065 00000151 0000018d
+l01 0000067 00000193 000001cd
+l01 0000068 000001cd 000001e8
+l01 0000069 000001e8 000001fd
+l01 0000070 00000227 0000025b
+l01 0000071 0000025b 00000299
+l01 0000073 0000029f 000002ba
+l01 0000075 000002c0 000002e2
+l01 0000076 000002e8 000002f0

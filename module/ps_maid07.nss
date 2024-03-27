@@ -1,0 +1,16 @@
+//::///////////////////////////////////////////////
+//:: FileName ps_maid07
+//:://////////////////////////////////////////////
+//:://////////////////////////////////////////////
+//:: Created By: Script Wizard
+//:: Created On: 7/4/2006 9:46:16 PM
+//:://////////////////////////////////////////////
+void main()
+{
+	// Give the speaker the items
+	CreateItemOnObject("ps_sausage", GetPCSpeaker(), 1);
+
+
+	// Remove some gold from the player
+	TakeGoldFromCreature(4, GetPCSpeaker(), TRUE);
+}

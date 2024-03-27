@@ -1,0 +1,312 @@
+NDB V1.0
+0000003 0000002 0000107 0000023 0000087
+n00 x2_inc_restsys
+n01 x2_inc_switches
+N02 ps_moddef_load
+s 03 vector
+sf f x
+sf f y
+sf f z
+s 17 wm_struct
+sf s sTable
+sf s sMonsterNight1
+sf s sMonsterNight2
+sf s sMonsterNight3
+sf s sMonsterDay1
+sf s sMonsterDay2
+sf s sMonsterDay3
+sf i nProbNight1
+sf i nProbNight2
+sf i nProbDay1
+sf i nProbDay2
+sf i nListenCheckDC
+sf i nFeedBackStrRefSuccess
+sf i nFeedBackStrRefFail
+sf i nProbabilityDay
+sf i nProbabilityNight
+sf i nRowNumber
+f ffffffff ffffffff 000 s MODULE_SWITCH_ENABLE_UMD_SCROLLS
+f ffffffff ffffffff 000 s MODULE_SWITCH_DISABLE_ITEM_CREATION_FEATS
+f ffffffff ffffffff 000 s MODULE_SWITCH_AOE_HURT_NEUTRAL_NPCS
+f ffffffff ffffffff 000 s MODULE_SWITCH_ENABLE_CRAFT_WAND_50_CHARGES
+f ffffffff ffffffff 000 s MODULE_SWITCH_EPIC_SPELLS_HURT_CASTER
+f ffffffff ffffffff 000 s MODULE_SWITCH_SPELL_CORERULES_DMASTERTOUCH
+f ffffffff ffffffff 000 s MODULE_SWITCH_RESTRICT_USE_POISON_TO_FEAT
+f ffffffff ffffffff 000 s MODULE_SWITCH_ENABLE_MULTI_HENCH_AOE_DAMAGE
+f ffffffff ffffffff 000 s MODULE_SWITCH_ENABLE_NPC_AOE_HURT_ALLIES
+f ffffffff ffffffff 000 s MODULE_SWITCH_ENABLE_BEBILITH_RUIN_ARMOR
+f ffffffff ffffffff 000 s MODULE_SWITCH_ENABLE_INVISIBLE_GLYPH_OF_WARDING
+f ffffffff ffffffff 000 s MODULE_SWITCH_ENABLE_CROSSAREA_WALKWAYPOINTS
+f ffffffff ffffffff 000 s MODULE_SWITCH_DISABLE_SECRET_DOOR_FLASH
+f ffffffff ffffffff 000 s MODULE_SWITCH_ENABLE_TAGBASED_SCRIPTS
+f ffffffff ffffffff 000 s MODULE_SWITCH_USE_XP2_RESTSYSTEM
+f ffffffff ffffffff 000 s MODULE_SWITCH_DISABLE_AI_DISPEL_AOE
+f ffffffff ffffffff 000 s MODULE_SWITCH_NO_RANDOM_MONSTER_LOOT
+f ffffffff ffffffff 000 s MODULE_VAR_OVERRIDE_SPELLSCRIPT
+f ffffffff ffffffff 000 s MODULE_VAR_TAGBASED_SCRIPT_PREFIX
+f ffffffff ffffffff 000 s MODULE_VAR_WANDERING_MONSTER_2DA
+f ffffffff ffffffff 000 s MODULE_VAR_AI_NO_DISPEL_AOE_CHANCE
+f ffffffff ffffffff 000 s MODULE_VAR_AI_STOP_EXPERTISE_ABUSE
+f ffffffff ffffffff 000 s CREATURE_VAR_CUSTOM_AISCRIPT
+f ffffffff ffffffff 000 s CREATURE_VAR_RANDOMIZE_NAME
+f ffffffff ffffffff 000 s CREATURE_VAR_RANDOMIZE_SPELLUSE
+f ffffffff ffffffff 000 s CREATURE_VAR_USE_SPAWN_STEALTH
+f ffffffff ffffffff 000 s CREATURE_VAR_USE_SPAWN_SEARCH
+f ffffffff ffffffff 000 s CREATURE_VAR_USE_SPAWN_AMBIENT
+f ffffffff ffffffff 000 s CREATURE_VAR_USE_SPAWN_AMBIENT_IMMOBILE
+f ffffffff ffffffff 000 s CREATURE_VAR_IMMUNE_TO_DISPEL
+f ffffffff ffffffff 000 s CREATURE_VAR_IS_INCORPOREAL
+f ffffffff ffffffff 000 s CREATURE_VAR_NUMBER_OF_ATTACKS
+f ffffffff ffffffff 000 s CREATURE_AI_MODIFIED_MAGIC_RATE
+f ffffffff ffffffff 000 s CREATURE_AI_MODIFIED_OFFENSE_RATE
+f ffffffff ffffffff 000 s CREATURE_AI_MODIFIED_COMPASSION_RATE
+f ffffffff ffffffff 000 s CREATURE_VAR_PALE_MASTER_SPECIAL_ITEM
+f ffffffff ffffffff 000 i X2_ITEM_EVENT_ACTIVATE
+f ffffffff ffffffff 000 i X2_ITEM_EVENT_EQUIP
+f ffffffff ffffffff 000 i X2_ITEM_EVENT_UNEQUIP
+f ffffffff ffffffff 000 i X2_ITEM_EVENT_ONHITCAST
+f ffffffff ffffffff 000 i X2_ITEM_EVENT_ACQUIRE
+f ffffffff ffffffff 000 i X2_ITEM_EVENT_UNACQUIRE
+f ffffffff ffffffff 000 i X2_ITEM_EVENT_SPELLCAST_AT
+f ffffffff ffffffff 000 i X2_EXECUTE_SCRIPT_CONTINUE
+f ffffffff ffffffff 000 i X2_EXECUTE_SCRIPT_END
+f ffffffff ffffffff 001 v SetUserDefinedItemEventNumber
+fp i
+f ffffffff ffffffff 000 i GetUserDefinedItemEventNumber
+f 0000016d 00000229 002 v SetModuleSwitch
+fp s
+fp i
+f 00000229 0000027b 001 i GetModuleSwitchValue
+fp s
+f ffffffff ffffffff 000 s DOOR_FLAG_RESIST_KNOCK
+f ffffffff ffffffff 003 v SetDoorFlag
+fp o
+fp s
+fp i
+f ffffffff ffffffff 002 i GetDoorFlag
+fp o
+fp s
+f ffffffff ffffffff 000 s WAYPOINT_VAR_FORCE_SETFACING
+f ffffffff ffffffff 000 s ITEM_FLAG_NO_CRAFT_MODIFICATION
+f ffffffff ffffffff 003 v SetItemFlag
+fp o
+fp s
+fp i
+f ffffffff ffffffff 002 i GetItemFlag
+fp o
+fp s
+f ffffffff ffffffff 002 i ExecuteScriptAndReturnInt
+fp s
+fp o
+f ffffffff ffffffff 001 v SetExecutedScriptReturnValue
+fp i
+f ffffffff ffffffff 001 v SetUserDefinedItemEventPrefix
+fp s
+f ffffffff ffffffff 001 v SetModuleOverrideSpellscript
+fp s
+f ffffffff ffffffff 003 v SetCreatureFlag
+fp o
+fp s
+fp i
+f ffffffff ffffffff 002 i GetCreatureFlag
+fp o
+fp s
+f ffffffff ffffffff 002 v SetCreatureOverrideAIScript
+fp o
+fp s
+f ffffffff ffffffff 001 v SetCreatureOverrideAIScriptFinished
+fp o
+f ffffffff ffffffff 001 v ClearCreatureOverrideAIScriptTarget
+fp o
+f ffffffff ffffffff 001 o GetCreatureOverrideAIScriptTarget
+fp o
+f ffffffff ffffffff 001 v SetWanderingMonster2DAFile
+fp s
+f ffffffff ffffffff 000 s GetModuleOverrideSpellscript
+f ffffffff ffffffff 000 v SetModuleOverrideSpellScriptFinished
+f ffffffff ffffffff 000 i GetModuleOverrideSpellScriptFinished
+f ffffffff ffffffff 001 s GetUserDefinedItemEventScriptName
+fp o
+f ffffffff ffffffff 000 s X2_WM_2DA_NAME
+f ffffffff ffffffff 000 s X2_WM_SPAWNSPOT_TAG
+f ffffffff ffffffff 000 i X2_WM_SPAWNSPOT_EVENTID
+f ffffffff ffffffff 000 f X2_WM_FLOOD_PROTECTION_PERIOD
+f ffffffff ffffffff 000 i X2_WMT_INVALID_TABLE
+f ffffffff ffffffff 000 i X2_WMT_DEFAULT_FEEDBACK_FAIL
+f ffffffff ffffffff 000 i X2_WMT_DEFAULT_FEEDBACK_SUCCESS
+f ffffffff ffffffff 003 v WMSetAreaProbability
+fp o
+fp i
+fp i
+f ffffffff ffffffff 004 v WMSetAreaTable
+fp o
+fp s
+fp i
+fp i
+f ffffffff ffffffff 001 i WMGetAreaHasTable
+fp o
+f ffffffff ffffffff 001 i WMGetUseAppearAnimation
+fp o
+f ffffffff ffffffff 001 i WMGetWanderingMonstersDisabled
+fp o
+f ffffffff ffffffff 002 v WMSetWanderingMonstersDisabled
+fp o
+fp i
+f ffffffff ffffffff 001 i WMCheckForWanderingMonster
+fp o
+f 0000027b 00000439 000 v WMBuild2DACache
+f ffffffff ffffffff 002 v WMSetupAmbush
+fp o
+fp s
+f ffffffff ffffffff 001 v WMRunAmbush
+fp o
+f ffffffff ffffffff 001 i WMStartPlayerRest
+fp o
+f ffffffff ffffffff 002 v WMFinishPlayerRest
+fp o
+fp i
+f ffffffff ffffffff 001 i WMGetAreaListenCheck
+fp o
+f ffffffff ffffffff 001 i WMDoListenCheck
+fp o
+f 00000a4a 00000b07 004 s Get2DAStringOrDefault
+fp s
+fp s
+fp i
+fp s
+f ffffffff ffffffff 001 v WMDebug
+fp s
+f 000009ba 00000a4a 000 s WMGet2DAToUse
+f 000004af 000009ba 001 t0001 GetNextWMTableEntry
+fp i
+f 00000439 000004af 001 t0001 GetFirstWMTableEntry
+fp i
+f ffffffff ffffffff 001 t0001 GetWMTableEntryByIndex
+fp i
+f ffffffff ffffffff 002 t0001 GetWMStructByName
+fp s
+fp i
+f ffffffff ffffffff 001 t0001 WMGetAreaMonsterTable
+fp o
+f ffffffff ffffffff 001 s WMGetWanderingMonsterFrom2DA
+fp o
+f ffffffff ffffffff 001 e2 WMGetAmbushSpot
+fp o
+f ffffffff ffffffff 002 v WMSpawnAmbushMonsters
+fp o
+fp e2
+f ffffffff ffffffff 001 v WMMakePartyRest
+fp o
+f 00000021 0000016d 000 v main
+f 0000000d 00000015 000 v #loader
+f 00000015 00000021 000 v #globals
+v 0000016d 00000221 00000000 i bValue
+v 0000016d 00000221 00000004 s sModuleSwitchConstant
+v 00000229 00000279 00000000 i #retval
+v 00000229 00000273 00000004 s sModuleSwitchConstant
+v 0000022b 0000026d 00000008 i nRet
+v 0000029d 00000431 00000000 t0001 stEntry
+v 000002db 00000431 00000044 o oArea
+v 000002dd 00000431 00000048 i nCount
+v 00000439 000004ad 00000000 t0001 #retval
+v 00000439 000004a7 00000044 i bAllData
+v 000004af 000009b8 00000000 t0001 #retval
+v 000004af 000009b2 00000044 i bAllData
+v 000004b1 000009ac 00000048 s s2DA
+v 000004c9 000009ac 0000004c i nCurRow
+v 00000517 000009ac 00000050 t0001 stRet
+v 000009ba 00000a48 00000000 s #retval
+v 000009bc 00000a42 00000004 s s2DA
+v 00000a4a 00000b05 00000000 s #retval
+v 00000a4a 00000aff 00000004 s sDefault
+v 00000a4a 00000aff 00000008 i nRow
+v 00000a4a 00000aff 0000000c s sColumn
+v 00000a4a 00000aff 00000010 s s2DA
+v 00000a4c 00000af9 00000014 s sRet
+l00 0000045 00000015 00000015
+l00 0000046 00000015 00000015
+l00 0000047 00000015 00000015
+l00 0000048 00000015 00000015
+l00 0000049 00000015 00000015
+l00 0000050 00000015 00000015
+l00 0000051 00000015 00000015
+l00 0000052 00000015 00000015
+l00 0000053 00000015 00000015
+l00 0000054 00000015 00000015
+l00 0000055 00000015 00000015
+l00 0000056 00000015 00000015
+l00 0000057 00000015 00000015
+l00 0000058 00000015 00000015
+l00 0000059 00000015 00000015
+l00 0000060 00000015 00000015
+l00 0000061 00000015 00000015
+l02 0000041 00000021 00000059
+l02 0000045 0000005f 0000008b
+l02 0000050 00000091 000000b4
+l02 0000089 000000b4 000000e5
+l02 0000091 000000e5 0000011a
+l02 0000110 00000126 00000159
+l02 0000117 0000015f 00000165
+l02 0000120 0000016b 0000016d
+l01 0000406 0000016d 0000017d
+l01 0000408 00000183 00000195
+l01 0000409 00000195 0000019b
+l01 0000410 000001a1 000001a3
+l01 0000412 000001ed 00000201
+l01 0000414 00000207 00000221
+l01 0000415 00000221 00000229
+l01 0000423 00000229 0000024b
+l01 0000424 0000024b 0000026d
+l01 0000425 00000273 0000027b
+l00 0000319 0000027b 000002d9
+l00 0000320 000002d9 000002db
+l00 0000321 000002db 000002dd
+l00 0000322 000002dd 000002fd
+l00 0000325 000002fd 00000345
+l00 0000326 00000345 0000038f
+l00 0000327 0000038f 000003db
+l00 0000328 000003db 000003ef
+l00 0000329 000003ef 0000042b
+l00 0000334 00000437 00000439
+l00 0000266 00000439 0000045d
+l00 0000267 0000045d 000004a7
+l00 0000268 000004a7 000004af
+l00 0000216 000004af 000004c7
+l00 0000221 000004c7 000004f5
+l00 0000222 000004f5 00000517
+l00 0000224 00000517 0000054c
+l00 0000226 0000054c 00000562
+l00 0000228 00000568 0000057e
+l00 0000229 0000057e 000005a0
+l00 0000231 000005a6 000005e4
+l00 0000232 000005e4 00000624
+l00 0000233 00000624 0000065d
+l00 0000234 0000065d 00000665
+l00 0000236 0000066b 0000069d
+l00 0000237 0000069d 000006cf
+l00 0000238 000006cf 00000701
+l00 0000239 00000701 00000735
+l00 0000240 00000735 00000769
+l00 0000241 00000769 0000079d
+l00 0000246 0000079d 000007dd
+l00 0000247 000007dd 0000081d
+l00 0000248 0000081d 0000085b
+l00 0000249 0000085b 00000899
+l00 0000254 00000899 000008e8
+l00 0000255 000008e8 00000934
+l00 0000258 0000093a 00000950
+l00 0000259 00000950 00000964
+l00 0000260 00000964 0000098a
+l00 0000261 0000098a 000009ac
+l00 0000262 000009b2 000009ba
+l00 0000194 000009ba 000009e6
+l00 0000195 000009e6 000009f4
+l00 0000197 000009fa 00000a1a
+l00 0000199 00000a20 00000a42
+l00 0000200 00000a48 00000a4a
+l00 0000170 00000a4a 00000a4c
+l00 0000171 00000a4c 00000a77
+l00 0000172 00000a77 00000ab5
+l00 0000174 00000abb 00000ad1
+l00 0000176 00000ad7 00000af9
+l00 0000178 00000aff 00000b07

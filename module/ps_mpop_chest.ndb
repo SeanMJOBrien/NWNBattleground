@@ -1,0 +1,350 @@
+NDB V1.0
+0000002 0000001 0000128 0000017 0000067
+n00 nw_o2_coninclude
+N01 ps_mpop_chest
+s 03 vector
+sf f x
+sf f y
+sf f z
+f ffffffff ffffffff 000 i RANGE_1_MIN
+f ffffffff ffffffff 000 i RANGE_1_MAX
+f ffffffff ffffffff 000 i RANGE_2_MIN
+f ffffffff ffffffff 000 i RANGE_2_MAX
+f ffffffff ffffffff 000 i RANGE_3_MIN
+f ffffffff ffffffff 000 i RANGE_3_MAX
+f ffffffff ffffffff 000 i RANGE_4_MIN
+f ffffffff ffffffff 000 i RANGE_4_MAX
+f ffffffff ffffffff 000 i RANGE_5_MIN
+f ffffffff ffffffff 000 i RANGE_5_MAX
+f ffffffff ffffffff 000 i RANGE_6_MIN
+f ffffffff ffffffff 000 i RANGE_6_MAX
+f ffffffff ffffffff 000 i NUMBER_LOW_ONE
+f ffffffff ffffffff 000 i NUMBER_MED_ONE
+f ffffffff ffffffff 000 i NUMBER_HIGH_ONE
+f ffffffff ffffffff 000 i NUMBER_BOSS_ONE
+f ffffffff ffffffff 000 i NUMBER_LOW_TWO
+f ffffffff ffffffff 000 i NUMBER_MED_TWO
+f ffffffff ffffffff 000 i NUMBER_HIGH_TWO
+f ffffffff ffffffff 000 i NUMBER_BOSS_TWO
+f ffffffff ffffffff 000 i NUMBER_LOW_THREE
+f ffffffff ffffffff 000 i NUMBER_MED_THREE
+f ffffffff ffffffff 000 i NUMBER_HIGH_THREE
+f ffffffff ffffffff 000 i NUMBER_BOSS_THREE
+f ffffffff ffffffff 000 i NUMBER_BOOK_ONE
+f ffffffff ffffffff 000 i NUMBER_BOOK_TWO
+f ffffffff ffffffff 000 i NUMBER_BOOK_THREE
+f ffffffff ffffffff 000 f LOW_MOD_GOLD
+f ffffffff ffffffff 000 f MEDIUM_MOD_GOLD
+f ffffffff ffffffff 000 f HIGH_MOD_GOLD
+f ffffffff ffffffff 000 i LOW_PROB_BOOK
+f ffffffff ffffffff 000 i MEDIUM_PROB_BOOK
+f ffffffff ffffffff 000 i HIGH_PROB_BOOK
+f ffffffff ffffffff 000 i LOW_PROB_ANIMAL
+f ffffffff ffffffff 000 i MEDIUM_PROB_ANIMAL
+f ffffffff ffffffff 000 i HIGH_PROB_ANIMAL
+f ffffffff ffffffff 000 i LOW_PROB_JUNK
+f ffffffff ffffffff 000 i MEDIUM_PROB_JUNK
+f ffffffff ffffffff 000 i HIGH_PROB_JUNK
+f ffffffff ffffffff 000 i LOW_PROB_GOLD
+f ffffffff ffffffff 000 i MEDIUM_PROB_GOLD
+f ffffffff ffffffff 000 i HIGH_PROB_GOLD
+f ffffffff ffffffff 000 i LOW_PROB_GEM
+f ffffffff ffffffff 000 i MEDIUM_PROB_GEM
+f ffffffff ffffffff 000 i HIGH_PROB_GEM
+f ffffffff ffffffff 000 i LOW_PROB_JEWEL
+f ffffffff ffffffff 000 i MEDIUM_PROB_JEWEL
+f ffffffff ffffffff 000 i HIGH_PROB_JEWEL
+f ffffffff ffffffff 000 i LOW_PROB_ARCANE
+f ffffffff ffffffff 000 i MEDIUM_PROB_ARCANE
+f ffffffff ffffffff 000 i HIGH_PROB_ARCANE
+f ffffffff ffffffff 000 i LOW_PROB_DIVINE
+f ffffffff ffffffff 000 i MEDIUM_PROB_DIVINE
+f ffffffff ffffffff 000 i HIGH_PROB_DIVINE
+f ffffffff ffffffff 000 i LOW_PROB_AMMO
+f ffffffff ffffffff 000 i MEDIUM_PROB_AMMO
+f ffffffff ffffffff 000 i HIGH_PROB_AMMO
+f ffffffff ffffffff 000 i LOW_PROB_KIT
+f ffffffff ffffffff 000 i MEDIUM_PROB_KIT
+f ffffffff ffffffff 000 i HIGH_PROB_KIT
+f ffffffff ffffffff 000 i LOW_PROB_POTION
+f ffffffff ffffffff 000 i MEDIUM_PROB_POTION
+f ffffffff ffffffff 000 i HIGH_PROB_POTION
+f ffffffff ffffffff 000 i LOW_PROB_TABLE2
+f ffffffff ffffffff 000 i MEDIUM_PROB_TABLE2
+f ffffffff ffffffff 000 i HIGH_PROB_TABLE2
+f ffffffff ffffffff 000 i TREASURE_LOW
+f ffffffff ffffffff 000 i TREASURE_MEDIUM
+f ffffffff ffffffff 000 i TREASURE_HIGH
+f ffffffff ffffffff 000 i TREASURE_BOSS
+f ffffffff ffffffff 000 i TREASURE_BOOK
+f ffffffff ffffffff 000 i JUMP_LEVEL
+f ffffffff ffffffff 003 v CreateGenericExotic
+fp o
+fp o
+fp i
+f ffffffff ffffffff 003 v CreateGenericMonkWeapon
+fp o
+fp o
+fp i
+f ffffffff ffffffff 003 v CreateSpecificMonkWeapon
+fp o
+fp o
+fp i
+f ffffffff ffffffff 003 v CreateGenericDruidWeapon
+fp o
+fp o
+fp i
+f ffffffff ffffffff 003 v CreateSpecificDruidWeapon
+fp o
+fp o
+fp i
+f ffffffff ffffffff 003 v CreateGenericWizardWeapon
+fp o
+fp o
+fp i
+f ffffffff ffffffff 003 v CreateSpecificWizardWeapon
+fp o
+fp o
+fp i
+f ffffffff ffffffff 001 i nDetermineClassToUse
+fp o
+f ffffffff ffffffff 001 v dbSpeak
+fp s
+f ffffffff ffffffff 003 v dbCreateItemOnObject
+fp s
+fp o
+fp i
+f ffffffff ffffffff 000 o GetLastOpener
+f ffffffff ffffffff 002 i GetRange
+fp i
+fp i
+f ffffffff ffffffff 001 i GetNumberOfItems
+fp i
+f ffffffff ffffffff 001 v CreateBook
+fp o
+f ffffffff ffffffff 001 v CreateAnimalPart
+fp o
+f ffffffff ffffffff 001 v CreateJunk
+fp o
+f ffffffff ffffffff 004 v CreateGold
+fp o
+fp o
+fp i
+fp i
+f ffffffff ffffffff 004 v CreateGem
+fp o
+fp o
+fp i
+fp i
+f ffffffff ffffffff 004 v CreateJewel
+fp o
+fp o
+fp i
+fp i
+f ffffffff ffffffff 002 i TrimLevel
+fp i
+fp i
+f ffffffff ffffffff 003 v CreateArcaneScroll
+fp o
+fp o
+fp i
+f ffffffff ffffffff 003 v CreateDivineScroll
+fp o
+fp o
+fp i
+f ffffffff ffffffff 003 v CreateAmmo
+fp o
+fp o
+fp i
+f ffffffff ffffffff 003 v CreateTrapKit
+fp o
+fp o
+fp i
+f ffffffff ffffffff 003 v CreateHealingKit
+fp o
+fp o
+fp i
+f ffffffff ffffffff 003 v CreateLockPick
+fp o
+fp o
+fp i
+f ffffffff ffffffff 003 v CreateKit
+fp o
+fp o
+fp i
+f ffffffff ffffffff 003 v CreatePotion
+fp o
+fp o
+fp i
+f ffffffff ffffffff 003 v CreateGenericMiscItem
+fp o
+fp o
+fp i
+f ffffffff ffffffff 003 v CreateGenericClassItem
+fp o
+fp o
+fp i
+f ffffffff ffffffff 003 v CreateGenericRodStaffWand
+fp o
+fp o
+fp i
+f ffffffff ffffffff 003 v CreateGenericSimple
+fp o
+fp o
+fp i
+f ffffffff ffffffff 003 v CreateGenericMartial
+fp o
+fp o
+fp i
+f ffffffff ffffffff 003 v CreateGenericLightArmor
+fp o
+fp o
+fp i
+f ffffffff ffffffff 003 v CreateGenericMediumArmor
+fp o
+fp o
+fp i
+f ffffffff ffffffff 003 v CreateGenericHeavyArmor
+fp o
+fp o
+fp i
+f ffffffff ffffffff 002 v CreateSpecificMiscItem
+fp o
+fp o
+f ffffffff ffffffff 002 v CreateSpecificRodStaffWand
+fp o
+fp o
+f ffffffff ffffffff 002 v CreateSpecificSimple
+fp o
+fp o
+f ffffffff ffffffff 002 v CreateSpecificMartial
+fp o
+fp o
+f ffffffff ffffffff 002 v CreateSpecificExotic
+fp o
+fp o
+f ffffffff ffffffff 002 v CreateSpecificLightArmor
+fp o
+fp o
+f ffffffff ffffffff 002 v CreateSpecificMediumArmor
+fp o
+fp o
+f ffffffff ffffffff 002 v CreateSpecificHeavyArmor
+fp o
+fp o
+f ffffffff ffffffff 003 v CreateTable2Item
+fp o
+fp o
+fp i
+f ffffffff ffffffff 003 v GenerateTreasure
+fp i
+fp o
+fp o
+f ffffffff ffffffff 002 v GenerateLowTreasure
+fp o
+fp o
+f ffffffff ffffffff 002 v GenerateMediumTreasure
+fp o
+fp o
+f ffffffff ffffffff 002 v GenerateHighTreasure
+fp o
+fp o
+f ffffffff ffffffff 002 v GenerateBossTreasure
+fp o
+fp o
+f ffffffff ffffffff 002 v GenerateBookTreasure
+fp o
+fp o
+f ffffffff ffffffff 003 v GenerateNPCTreasure
+fp i
+fp o
+fp o
+f ffffffff ffffffff 000 v ShoutDisturbed
+f 00000751 0000078d 001 v SelfDestruct
+fp o
+f 00000015 00000751 000 v main
+f 0000000d 00000015 000 v #loader
+v 0000004a 00000749 00000000 s sGold
+v 0000006d 00000749 00000004 i nRoll
+v 0000006f 00000749 00000008 i nCount
+v 00000085 00000749 0000000c i nDice
+v 00000087 00000749 00000010 i nDieType
+v 00000089 00000749 00000014 i nGiveGold
+v 00000223 00000749 00000018 s sTreasureType
+v 00000244 00000749 0000001c i nPlace
+v 0000026e 00000749 00000020 i nPick
+v 00000270 00000749 00000024 i nTarget
+v 00000272 00000749 00000028 o oScan
+v 00000274 00000749 0000002c o oSelf
+v 0000028a 00000749 00000030 o oChest
+v 0000028c 00000749 00000034 s sCurrent
+v 00000621 00000749 00000038 i nLock
+v 00000644 00000749 0000003c i nTrap
+v 00000751 00000785 00000000 o oChest
+l01 0000013 00000015 00000036
+l01 0000015 0000003c 00000042
+l01 0000017 00000048 0000006b
+l01 0000018 0000006b 0000006d
+l01 0000019 0000006d 00000083
+l01 0000020 00000083 00000085
+l01 0000021 00000085 00000087
+l01 0000022 00000087 0000009d
+l01 0000023 0000009d 000000ab
+l01 0000025 000000b1 000000d2
+l01 0000026 000000d2 000000fa
+l01 0000028 00000100 0000012c
+l01 0000029 0000012c 00000158
+l01 0000030 00000158 0000016c
+l01 0000032 00000184 000001b1
+l01 0000030 000001b1 000001c5
+l01 0000034 000001cb 000001db
+l01 0000038 00000221 00000242
+l01 0000039 00000242 00000258
+l01 0000040 00000258 0000026c
+l01 0000041 0000026c 0000026e
+l01 0000042 0000026e 00000270
+l01 0000043 00000270 00000272
+l01 0000044 00000272 00000288
+l01 0000045 00000288 0000028a
+l01 0000046 0000028a 000002b5
+l01 0000047 000002b5 000002c9
+l01 0000049 000002c9 000002ea
+l01 0000050 000002ea 00000316
+l01 0000051 00000316 00000328
+l01 0000053 0000032e 00000369
+l01 0000054 00000369 00000384
+l01 0000055 00000384 00000398
+l01 0000056 00000398 000003ae
+l01 0000058 000003ae 000003c2
+l01 0000059 000003c2 000003dd
+l01 0000061 000003e3 00000406
+l01 0000062 00000406 0000041a
+l01 0000063 0000041a 00000435
+l01 0000064 00000435 0000044b
+l01 0000066 0000044b 0000045d
+l01 0000068 00000463 000004be
+l01 0000071 000004c4 000004f8
+l01 0000073 000004f8 0000051a
+l01 0000075 00000520 00000522
+l01 0000076 00000543 00000549
+l01 0000078 0000054f 00000563
+l01 0000079 00000563 0000057e
+l01 0000082 0000058a 000005a8
+l01 0000083 000005a8 000005d1
+l01 0000085 000005d7 000005f6
+l01 0000086 000005f6 0000061f
+l01 0000087 0000061f 00000642
+l01 0000088 00000642 00000665
+l01 0000089 00000665 00000675
+l01 0000091 0000067b 00000690
+l01 0000092 000006ad 000006af
+l01 0000094 000006c6 000006d6
+l01 0000096 000006dc 000006f1
+l01 0000097 0000070e 00000710
+l01 0000099 00000710 00000721
+l01 0000100 00000721 00000732
+l01 0000101 00000732 00000743
+l01 0000107 0000074f 00000751
+l01 0000004 00000751 00000766
+l01 0000006 0000076c 0000077f
+l01 0000009 00000785 0000078d

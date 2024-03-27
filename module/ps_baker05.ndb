@@ -1,0 +1,44 @@
+NDB V1.0
+0000002 0000001 0000012 0000002 0000004
+n00 ps_timestamp
+N01 ps_baker05
+s 03 vector
+sf f x
+sf f y
+sf f z
+f ffffffff ffffffff 002 v TimeStamp
+fp o
+fp i
+f ffffffff ffffffff 006 v AdvanceTimeStamp
+fp o
+fp i
+fp i
+fp i
+fp i
+fp i
+f ffffffff ffffffff 002 i GetIsLaterThan
+fp o
+fp i
+f ffffffff ffffffff 002 v DeleteTimeStamp
+fp o
+fp i
+f ffffffff ffffffff 002 i GetHoursTill
+fp o
+fp i
+f ffffffff ffffffff 000 s SayGreyhawkDateTime
+f ffffffff ffffffff 001 s SayHours
+fp i
+f ffffffff ffffffff 001 v AdvanceTimeInHours
+fp i
+f ffffffff ffffffff 002 s SayTimestamp
+fp o
+fp i
+f ffffffff ffffffff 000 s SayLogTime
+f 00000015 0000007e 000 v main
+f 0000000d 00000015 000 v #loader
+v 00000017 00000076 00000000 o oPC
+v 0000002c 00000076 00000004 o oBread
+l01 0000005 00000015 0000002a
+l01 0000006 0000002a 0000005d
+l01 0000008 0000005d 00000076
+l01 0000009 0000007c 0000007e

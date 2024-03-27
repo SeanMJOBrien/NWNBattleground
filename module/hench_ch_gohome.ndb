@@ -1,0 +1,433 @@
+NDB V1.0
+0000005 0000001 0000110 0000037 0000081
+n00 x0_i0_campaign
+n01 x0_i0_partywide
+n02 x0_i0_transport
+n03 x0_i0_common
+N04 hench_ch_gohome
+s 03 vector
+sf f x
+sf f y
+sf f z
+f ffffffff ffffffff 000 s GetCampaignDBName
+f ffffffff ffffffff 003 v SetCampaignDBString
+fp o
+fp s
+fp s
+f ffffffff ffffffff 002 s GetCampaignDBString
+fp o
+fp s
+f ffffffff ffffffff 003 v SetCampaignDBInt
+fp o
+fp s
+fp i
+f ffffffff ffffffff 002 i GetCampaignDBInt
+fp o
+fp s
+f ffffffff ffffffff 003 v SetCampaignDBFloat
+fp o
+fp s
+fp f
+f ffffffff ffffffff 002 f GetCampaignDBFloat
+fp o
+fp s
+f ffffffff ffffffff 003 v SetCampaignDBVector
+fp o
+fp s
+fp t0000
+f ffffffff ffffffff 002 t0000 GetCampaignDBVector
+fp o
+fp s
+f ffffffff ffffffff 003 v SetCampaignDBLocation
+fp o
+fp s
+fp e2
+f ffffffff ffffffff 002 e2 GetCampaignDBLocation
+fp o
+fp s
+f ffffffff ffffffff 003 i StoreCampaignDBObject
+fp o
+fp s
+fp o
+f ffffffff ffffffff 004 o RetrieveCampaignDBObject
+fp o
+fp s
+fp e2
+fp o
+f ffffffff ffffffff 002 v DeleteCampaignDBVariable
+fp o
+fp s
+f ffffffff ffffffff 001 i GetNumberPartyMembers
+fp o
+f ffffffff ffffffff 003 v SetLocalStringOnAll
+fp o
+fp s
+fp s
+f ffffffff ffffffff 003 v SetLocalIntOnAll
+fp o
+fp s
+fp i
+f ffffffff ffffffff 003 v SetLocalFloatOnAll
+fp o
+fp s
+fp f
+f ffffffff ffffffff 003 v SetLocalLocationOnAll
+fp o
+fp s
+fp e2
+f ffffffff ffffffff 003 v SetLocalObjectOnAll
+fp o
+fp s
+fp o
+f ffffffff ffffffff 003 v SetCampaignDBStringOnAll
+fp o
+fp s
+fp s
+f ffffffff ffffffff 003 v SetCampaignDBIntOnAll
+fp o
+fp s
+fp i
+f ffffffff ffffffff 003 v SetCampaignDBFloatOnAll
+fp o
+fp s
+fp f
+f ffffffff ffffffff 003 v SetCampaignDBVectorOnAll
+fp o
+fp s
+fp t0000
+f ffffffff ffffffff 003 v SetCampaignDBLocationOnAll
+fp o
+fp s
+fp e2
+f ffffffff ffffffff 003 v StoreCampaignDBObjectOnAll
+fp o
+fp s
+fp o
+f ffffffff ffffffff 002 v DeleteCampaignDBVariableOnAll
+fp o
+fp s
+f ffffffff ffffffff 002 v GiveGoldToAllEqually
+fp o
+fp i
+f ffffffff ffffffff 002 v GiveGoldToAll
+fp o
+fp i
+f ffffffff ffffffff 002 v GiveXPToAllEqually
+fp o
+fp i
+f ffffffff ffffffff 002 v GiveXPToAll
+fp o
+fp i
+f ffffffff ffffffff 003 v AdjustReputationWithFaction
+fp o
+fp o
+fp i
+f ffffffff ffffffff 002 v ClearPersonalReputationWithFaction
+fp o
+fp o
+f ffffffff ffffffff 002 v ClearAssociateActions
+fp o
+fp i
+f ffffffff ffffffff 002 v ClearNearbyFriendActions
+fp o
+fp i
+f ffffffff ffffffff 001 v SurrenderAllToEnemies
+fp o
+f ffffffff ffffffff 002 i GetIsItemPossessedByParty
+fp o
+fp s
+f ffffffff ffffffff 002 o GetItemPossessedByParty
+fp o
+fp s
+f ffffffff ffffffff 002 v RemoveItemFromParty
+fp o
+fp s
+f ffffffff ffffffff 003 v AdjustAlignmentOnAll
+fp o
+fp i
+fp i
+f ffffffff ffffffff 004 v TravelToObject
+fp o
+fp o
+fp i
+fp f
+f 000000fe 0000031f 004 v TravelToLocation
+fp e2
+fp o
+fp i
+fp f
+f 0000052a 0000086d 001 o GetNearestExit
+fp o
+f 0000031f 0000052a 002 o GetBestExit
+fp o
+fp o
+f ffffffff ffffffff 002 v TransportToWaypoint
+fp o
+fp o
+f ffffffff ffffffff 002 v TransportToLocation
+fp o
+fp e2
+f ffffffff ffffffff 002 v TransportAllToWaypoint
+fp o
+fp o
+f ffffffff ffffffff 002 v TransportAllToLocation
+fp o
+fp e2
+f 0000086d 00000b05 003 o GetBestExitByType
+fp o
+fp o
+fp i
+f ffffffff ffffffff 000 i X0_DEBUG_SETTING
+f ffffffff ffffffff 000 i DIFFICULTY_EASY
+f ffffffff ffffffff 000 i DIFFICULTY_MODERATE
+f ffffffff ffffffff 000 i DIFFICULTY_HARD
+f ffffffff ffffffff 000 i DIFFICULTY_IMPOSSIBLE
+f ffffffff ffffffff 000 s sHasMetSuffix
+f ffffffff ffffffff 000 s sHasHiredSuffix
+f ffffffff ffffffff 000 s sDidQuitSuffix
+f ffffffff ffffffff 000 s sFriendSuffix
+f ffffffff ffffffff 000 s sHasInterjectionSuffix
+f ffffffff ffffffff 000 s sInterjectionSetSuffix
+f ffffffff ffffffff 000 s sAdviceSuffix
+f ffffffff ffffffff 000 s sPersuadeAttemptSuffix
+f ffffffff ffffffff 000 s sPersuadeSuccessSuffix
+f ffffffff ffffffff 000 s sThreatenSuffix
+f ffffffff ffffffff 000 s sOneLinerVarname
+f ffffffff ffffffff 000 s sOneShotVarname
+f ffffffff ffffffff 000 s sRouterTag
+f ffffffff ffffffff 000 s sStartLocationVarname
+f ffffffff ffffffff 000 s sRespawnLocationVarname
+f ffffffff ffffffff 000 f CONVERSATION_ATTEMPT_DELAY
+f ffffffff ffffffff 001 v DBG_msg
+fp s
+f ffffffff ffffffff 000 i GetChapter
+f ffffffff ffffffff 000 i EndModule
+f ffffffff ffffffff 001 s GetMyArea
+fp o
+f ffffffff ffffffff 002 i HasItemByTag
+fp o
+fp s
+f ffffffff ffffffff 001 v SetRespawnLocation
+fp o
+f ffffffff ffffffff 002 v SetRespawnLocationSpecific
+fp o
+fp e2
+f 000000bd 000000fe 001 e2 GetRespawnLocation
+fp o
+f ffffffff ffffffff 001 s GetTagNoPrefix
+fp o
+f ffffffff ffffffff 003 v SetBooleanValue
+fp o
+fp s
+fp i
+f ffffffff ffffffff 002 i GetBooleanValue
+fp o
+fp s
+f ffffffff ffffffff 003 v SetCampaignBooleanValue
+fp o
+fp s
+fp i
+f ffffffff ffffffff 002 i GetCampaignBooleanValue
+fp o
+fp s
+f ffffffff ffffffff 002 v ClearAllDialogue
+fp o
+fp o
+f ffffffff ffffffff 004 v SetHasInterjection
+fp o
+fp i
+fp i
+fp o
+f ffffffff ffffffff 003 v SetInterjection
+fp o
+fp i
+fp o
+f ffffffff ffffffff 002 i GetHasInterjection
+fp o
+fp o
+f ffffffff ffffffff 004 v SetHasAdvice
+fp o
+fp i
+fp i
+fp o
+f ffffffff ffffffff 002 i GetHasAdvice
+fp o
+fp o
+f ffffffff ffffffff 003 v SetOneLiner
+fp i
+fp i
+fp o
+f ffffffff ffffffff 001 i GetOneLiner
+fp o
+f ffffffff ffffffff 003 i GetPersuadeAttempt
+fp o
+fp i
+fp o
+f ffffffff ffffffff 003 v SetPersuadeAttempt
+fp o
+fp i
+fp o
+f ffffffff ffffffff 003 i GetDidPersuade
+fp o
+fp i
+fp o
+f ffffffff ffffffff 003 v SetDidPersuade
+fp o
+fp i
+fp o
+f ffffffff ffffffff 002 v SetThreaten
+fp o
+fp o
+f ffffffff ffffffff 002 i GetThreaten
+fp o
+fp o
+f ffffffff ffffffff 003 v SetFriendly
+fp o
+fp i
+fp o
+f ffffffff ffffffff 002 i GetFriendly
+fp o
+fp o
+f ffffffff ffffffff 000 o GetEventRouter
+f ffffffff ffffffff 000 s GetEventRouterTag
+f ffffffff ffffffff 000 o CreateEventRouter
+f ffffffff ffffffff 003 i ThreatenCheck
+fp i
+fp o
+fp o
+f ffffffff ffffffff 003 i FriendCheck
+fp i
+fp o
+fp o
+f ffffffff ffffffff 003 i MeanCheck
+fp i
+fp o
+fp o
+f ffffffff ffffffff 003 v PersistentConversationAttempt
+fp o
+fp s
+fp i
+f ffffffff ffffffff 002 i GetInterjectionSet
+fp o
+fp o
+f 00000077 000000bd 000 v main
+f 0000000d 00000015 000 v #loader
+f 00000015 00000077 000 v #globals
+v 00000017 ffffffff 00000000 s X0_DATABASE_DEFAULT
+v 00000041 ffffffff 00000004 s X0_DATABASE_XP1
+v 00000079 000000b5 00000000 e2 lHome
+v 000000bd 000000fc 00000000 e2 #retval
+v 000000bd 000000f6 00000004 o oTarget
+v 000000fe 00000317 00000000 f fDelay
+v 000000fe 00000317 00000004 i bRun
+v 000000fe 00000317 00000008 o oTarget
+v 000000fe 00000317 0000000c e2 lDest
+v 00000100 00000311 00000010 o oDestArea
+v 0000017e 00000277 00000014 o oBestExit
+v 000001e8 00000277 00000018 i nObjType
+v 0000031f 00000528 00000000 o #retval
+v 0000031f 00000522 00000004 o oTargetArea
+v 0000031f 00000522 00000008 o oTarget
+v 00000366 0000051c 0000000c o oBestDoor
+v 000003f2 0000051c 00000010 o oBestTrigger
+v 0000052a 0000086b 00000000 o #retval
+v 0000052a 00000865 00000004 o oTarget
+v 0000052c 0000085f 00000008 o oCurArea
+v 00000549 0000085f 0000000c o oNearDoor
+v 000005a9 0000085f 00000010 i nTrig
+v 000005bf 0000085f 00000014 o oNearTrig
+v 000006c0 0000085f 00000018 f fMaxDist
+v 000006d6 0000085f 0000001c f fDoorDist
+v 000006ee 0000085f 00000020 f fTrigDist
+v 0000086d 00000b03 00000000 o #retval
+v 0000086d 00000afd 00000004 i nObjType
+v 0000086d 00000afd 00000008 o oTargetArea
+v 0000086d 00000afd 0000000c o oTarget
+v 0000086f 00000af7 00000010 o oCurrentArea
+v 0000088c 00000af7 00000014 i nDoor
+v 000008a2 00000af7 00000018 o oDoor
+v 000008cd 00000af7 0000001c o oNearestDoor
+v 000008e5 00000af7 00000020 o oDestArea
+v 000008fb 00000af7 00000024 o oBestDoor
+v 00000911 00000af7 00000028 o oBestDestArea
+l00 0000051 00000015 0000003f
+l00 0000053 0000003f 00000065
+l04 0000016 00000077 00000095
+l04 0000018 00000095 000000b5
+l04 0000019 000000bb 000000bd
+l03 0000329 000000bd 000000f6
+l03 0000330 000000f6 000000fe
+l02 0000079 000000fe 0000011b
+l02 0000080 0000011b 00000132
+l02 0000081 00000138 00000174
+l02 0000083 0000017a 0000017c
+l02 0000084 0000017c 000001a4
+l02 0000085 000001a4 000001e6
+l02 0000087 000001e6 00000203
+l02 0000088 00000203 00000213
+l02 0000089 00000219 00000245
+l02 0000091 0000024b 00000277
+l02 0000094 0000027d 000002c6
+l02 0000095 000002c6 00000311
+l02 0000096 00000317 0000031f
+l02 0000193 0000031f 0000032e
+l02 0000194 00000334 0000035e
+l02 0000197 00000364 00000392
+l02 0000201 00000392 0000039f
+l02 0000202 000003a5 000003bc
+l02 0000203 000003c2 000003e4
+l02 0000208 000003f0 0000041e
+l02 0000211 0000041e 0000042b
+l02 0000212 00000431 00000448
+l02 0000213 0000044e 00000470
+l02 0000217 0000047c 00000489
+l02 0000218 0000048f 000004b1
+l02 0000220 000004b7 000004c4
+l02 0000221 000004ca 000004ec
+l02 0000223 000004f2 0000051c
+l02 0000225 00000522 0000052a
+l02 0000102 0000052a 00000547
+l02 0000104 00000547 00000570
+l02 0000105 00000570 00000587
+l02 0000106 0000058d 000005a1
+l02 0000109 000005a7 000005bd
+l02 0000110 000005bd 000005e6
+l02 0000111 000005e6 00000644
+l02 0000115 00000644 00000658
+l02 0000116 00000658 00000681
+l02 0000118 00000687 0000069e
+l02 0000119 000006a4 000006b8
+l02 0000121 000006be 000006d4
+l02 0000122 000006d4 000006ec
+l02 0000123 000006ec 00000704
+l02 0000125 00000704 00000711
+l02 0000126 00000717 0000073a
+l02 0000128 00000740 0000074d
+l02 0000129 00000753 00000776
+l02 0000132 0000077c 0000078e
+l02 0000133 00000794 000007b6
+l02 0000135 000007bc 000007fe
+l02 0000136 00000804 00000826
+l02 0000139 0000082c 0000085f
+l02 0000140 00000865 0000086d
+l02 0000145 0000086d 0000088a
+l02 0000146 0000088a 000008a0
+l02 0000148 000008a0 000008cb
+l02 0000149 000008cb 000008e3
+l02 0000150 000008e3 000008f9
+l02 0000152 000008f9 0000090f
+l02 0000153 0000090f 00000925
+l02 0000155 00000925 0000095f
+l02 0000156 0000095f 0000097f
+l02 0000160 0000097f 00000991
+l02 0000161 00000997 000009b9
+l02 0000168 000009bf 000009f0
+l02 0000169 000009f6 00000a0c
+l02 0000173 00000a12 00000a26
+l02 0000174 00000a26 00000a51
+l02 0000179 00000a57 00000a64
+l02 0000180 00000a6a 00000a8c
+l02 0000183 00000a92 00000aa9
+l02 0000184 00000aaf 00000ad1
+l02 0000186 00000ad7 00000af7
+l02 0000187 00000afd 00000b05

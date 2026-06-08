@@ -32,7 +32,7 @@ oPC = GetFirstPC();
 string sMyTeam;
 while(oPC!=OBJECT_INVALID)
     {
-    if (iMyTeam=1) sMyTeam="Good";
+    if (iMyTeam==1) sMyTeam="Good";
     else sMyTeam="Evil";
     DelayCommand(2.0f,FloatingTextStringOnCreature("The "+sMyTeam+" Team's mana pool was destroyed! Game over man.",oPC,TRUE));
     oPC=GetNextPC();
